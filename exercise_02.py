@@ -39,6 +39,7 @@ except:
 for option,val in options:
 	if option in ('-h','--help'):
 		print("Welcome to help menu \n -h : this comamand will guide you to help menu \n -i : ip address \n -ip : long form of -i \n -p : port to scan, can be a single port or many, ic case of many use comma \n -port : long form of -p")
+		sys.exit()
 	if option in ('-i','--ip'):
 		ip = val
 		print("ip", ip)
